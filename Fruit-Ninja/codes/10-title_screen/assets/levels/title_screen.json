@@ -1,0 +1,32 @@
+{
+    "assets": {
+        "background_image": {"type": "image", "source": "assets/images/background.png"}
+    },
+    "groups": [
+        "background",
+        "hud"
+    ],
+    "prefabs": {
+        "background": {
+            "type": "background",
+            "position": {"x": 0, "y": 0},
+            "properties": {
+                "texture": "background_image",
+                "group": "background"
+            }
+        },
+        "title": {
+            "type": "title",
+            "position": {"x": 0.5, "y": 0.3},
+            "properties": {
+                "text": "Fruit Ninja",
+                "style": {
+                    "font": "72px Arial", 
+                    "fill": "#FFF"
+                },
+                "group": "hud",
+                "anchor": {"x": 0.5, "y": 0.5}
+            }
+        }
+    }
+}
